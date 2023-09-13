@@ -16,7 +16,7 @@ function Home() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    fetch('https://morning-news-backend-benjamindio.vercel.app/articles')
+    fetch('https://morning-news-backend-ivory.vercel.app/articles')
       .then(response => response.json())
       .then(data => {
         setTopArticle(data.articles[0]);
